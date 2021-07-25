@@ -1,0 +1,32 @@
+ {
+	"source":{
+		"url": "https://www.moneycontrol.com/mutualfundindia/"
+	},
+	
+	"stage":{
+		"db_server_url": "jdbc:mysql://localhost/mf_src_stg",
+		"driver": "com.mysql.jdbc.Driver",
+		"dbtable": "top_funds",
+		"user": "root",
+		"password":"admin"
+	},
+	
+	"transform":{},
+	
+	"target":{},
+	
+	"notify":{},
+	
+	"spark" :{
+		"master" :"local[*]",
+		"app_name" : "test",
+		"ui_port" : ""		
+	},
+	
+	"dag_name":{},
+	
+	"log":{
+	"log_location" : ""
+	
+	}
+}
